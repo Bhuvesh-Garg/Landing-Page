@@ -8,12 +8,18 @@ body
     flex-direction: column;
     justify-content: space-between;
     color: aliceblue;
-    height: 100vh;
+    min-height: 100vh;
+    gap: 36px;
 }
 #header{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 2;
+    width: fit-content;
+   margin: auto;
+   
+    gap: 32px;
+    
 
 }
 .side{
@@ -66,7 +72,6 @@ button{
 }
 .sideby{
     display: flex;
- 
     margin: auto;
     max-width: 1000px;
     gap: 50px;
@@ -74,16 +79,14 @@ button{
 }
 .image{
     display: flex;
-    flex-grow: 1;
-    padding: 1em;
-    border-radius: 8px;
+    height: fit-content;
+    background-color:gray;
 }
 .inndertext{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
-    flex-grow: 1;
+    gap: 8px;
 }
 .middle{
     text-align: center;
@@ -93,12 +96,10 @@ button{
 }
 .lowermid{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     flex-grow: 1;
     background-color: #E5E7EB;
     color: #1F2937;
-    padding: 5em;
+    padding: 4em;
 
 }
 .quote{
@@ -110,5 +111,31 @@ button{
    font-weight: 300;
    font-style: italic;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 32px;
+    padding: 2em;
+}
+.imgtext{
+    max-width: 150px;
+    text-align: center;
+}
+.smaller{
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 12px;
+}
+.almostend{
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    padding: auto;
+    margin: auto;
+
+}
 .name{
+    text-align: end;
+    font-weight: 900;
 }
