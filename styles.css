@@ -14,10 +14,9 @@ body
 #header{
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
-    width: fit-content;
+    flex-grow: 1;
+    flex-shrink: 1;
    margin: auto;
-   
     gap: 32px;
     
 
@@ -39,12 +38,9 @@ a{
     background-color: aliceblue;
     color: #1F2937;
     flex-grow: 1;
+    min-width: fit-content;
 }
-figure{
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
+
 .awesome{
     font-size: 48px;
     color: #F9FAF8;
@@ -78,14 +74,17 @@ button{
     
 }
 .image{
-    display: flex;
-    height: fit-content;
+    
     background-color:gray;
+   
+    width: 100%;
+    height: auto;
+   
 }
 .inndertext{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    min-width: 250px;
     gap: 8px;
 }
 .middle{
@@ -174,3 +173,4 @@ padding-bottom: 1.5em;
     padding: 1.5em;
     text-align: center;
 }
+
